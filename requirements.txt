@@ -1,6 +1,6 @@
 streamlit
 pandas
 numpy
-annotated_text
+st-annotated-text
 spacy
 time
