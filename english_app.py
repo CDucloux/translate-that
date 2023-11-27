@@ -49,7 +49,8 @@ def main():
     elif mode == "🎲 Texte aléatoire" or mode == "🎲 Random text":
         user_translation, submit, clear = random_text(data, selected_language)
         if submit:
-            post_submit(selected_language, user_translation, nlp_fr, nlp_en)
+            post_submit(selected_language, user_translation, "test_1", "test_2")
+            # dans le post_submit, remplacer "test_1" par nlp_fr et nlp_en
         if clear:
             # Réinitialise les mots aléatoires
             (
