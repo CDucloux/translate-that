@@ -3,3 +3,4 @@ pandas
 numpy
 st-annotated-text
 spacy
+openpyxl
