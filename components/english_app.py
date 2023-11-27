@@ -1,6 +1,4 @@
 import streamlit as st
-import pandas as pd
-import numpy as np
 import time
 from annotated_text import annotated_text
 from app_components import *

@@ -1,0 +1,6 @@
+streamlit
+pandas
+numpy
+annotated_text
+spacy
+time
