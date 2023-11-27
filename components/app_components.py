@@ -240,10 +240,10 @@ def post_submit(
             response = st.error(
                 f"❌ Traduction incorrecte ! La **traduction attendue** était : *{st.session_state.correct_translation}*"
             )
-            doc = nlp_en(st.session_state.correct_translation)
-            sentence = [(str(token), token.pos_) for token in doc]
+            # doc = nlp_en(st.session_state.correct_translation)
+            # sentence = [(str(token), token.pos_) for token in doc]
             st.divider()
-            annotated_text(sentence)
+            # annotated_text(sentence)
 
     else:
         if user_translation.strip() == "":
@@ -254,10 +254,10 @@ def post_submit(
             response = st.error(
                 f"❌ Incorrect translation! The **expected translation** was : *{st.session_state.correct_translation}*"
             )
-            doc = nlp_fr(st.session_state.correct_translation)
-            sentence = [(str(token), token.pos_) for token in doc]
+            # doc = nlp_fr(st.session_state.correct_translation)
+            # sentence = [(str(token), token.pos_) for token in doc]
             st.divider()
-            annotated_text(sentence)
+            # annotated_text(sentence)
     return response
 
 
