@@ -143,7 +143,7 @@ def text_placeholder(data: pd.DataFrame, selected_language: str):
         return None
 
 
-def select_mode(data: pd.DataFrame, selected_language: str) -> str | None:
+def select_mode(data: pd.DataFrame, selected_language: str) -> str:
     """Permet de choisir entre 3 modes : apprentissage, texte aléatoire, et session d'entrainement."""
     if data is None:
         return None
@@ -270,9 +270,7 @@ def post_submit(selected_language: str, user_translation: str) -> DeltaGenerator
     return response
 
 
-def random_text(
-    data: pd.DataFrame, selected_language: str
-) -> tuple[str, bool, bool] | None:
+def random_text(data: pd.DataFrame, selected_language: str) -> tuple[str, bool, bool]:
     """Orchestre l'ensemble des fonctions pour générer du texte aléatoire."""
     if data is not None:
         check_session_state(data, selected_language)
