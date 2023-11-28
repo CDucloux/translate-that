@@ -94,7 +94,7 @@ def set_title(selected_language: str) -> DeltaGenerator:
     return st.title(title)
 
 
-def load_data(file) -> pd.DataFrame | None:
+def load_data(file) -> pd.DataFrame:
     """Permet de charger les données qui ont été uploadées."""
     if file is not None:
         if file.name.endswith(".csv"):
